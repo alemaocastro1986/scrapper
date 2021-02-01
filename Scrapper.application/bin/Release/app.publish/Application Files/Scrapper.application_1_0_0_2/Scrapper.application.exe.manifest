@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Scrapper.application.exe" version="1.0.0.2" publicKeyToken="ab248c7bef78febf" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Scrapper.application" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Scrapper.application.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Scrapper.application.exe" size="16824">
+      <assemblyIdentity name="Scrapper.application" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FfHBQfg9mpJusAzvDOWhD1XLHSrZ00Qfy4zhfp29iI8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Scrapper.Core.dll" size="23552">
+      <assemblyIdentity name="Scrapper.Core" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XqEpAZ4aIZvd7amifOJMOBJ8u/+obiSZPcMdN+x+nWU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Scrapper.Utils.dll" size="11776">
+      <assemblyIdentity name="Scrapper.Utils" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>SlgpIxiH58SY6y3Qk+ScwI7hb9I+WFhqm+XYo7HiTJI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Scrapper.application.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=BASFAD\CUNHACA" issuerKeyHash="3a29d42a416c85c1caedf54c5cd05b802f746845" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+CbxJmjxG0EkWRENr7Ue99ndkY/+AGW/3IxtmTN9iuU=</DigestValue></Reference></SignedInfo><SignatureValue>wW/BYCUCIUo48Lc0oGkY0EN0agG7UC8ZMxyWdNue5nzHB29JrmWtGLxAp2L4y+O8ANjHgdn+Af3NKee1kOI0Q5sDSTADR0/njC4SSnSx2klOFJjjz3fNgDlbDcmQ6/dsCt2hjhBJyQz5e1CxygTeqjCT0PHIlc2LVb40SHfZFIQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zmQPwjIm+3Gp9ACa1sHeMyEXBDN6ej58vtHcgOGEISrhm5zXcKE5MjUQw4Gfibxdp6lzRCiX782NvcaXiybw1LUachqdmwD9QtygPpoiWVymeT08g20GO6qdR7QS8elMaX2DOcm1e/eHjE2bdfoBiKK3Exn427RX6Pir7eJ8zrU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e58a7d33996d8cdcbf6500fe8f91ddd9f71eb5af0d115924411bf16826f126f8" Description="" Url=""><as:assemblyIdentity name="Scrapper.application.exe" version="1.0.0.2" publicKeyToken="ab248c7bef78febf" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BASFAD\CUNHACA</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>91y7iBZjoJu4vrrkvF8mjsxleZmwysTXDOicEo5ImAU=</DigestValue></Reference></SignedInfo><SignatureValue>gkHYDurRnCbc35yodeGuEBjAXHcXNO5yuz1SoV8SYjOG/Cpffv+PaisM4koIldnAZVTcgebVWOPqZ+C03jrzkGRszyolgPE7YPDvW03iMiPQCKLijH98ixaEL4V2whg4UwpPqoY3CKFDWomW5o58HX2qXsTCOKzqYNNAFUWViUM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zmQPwjIm+3Gp9ACa1sHeMyEXBDN6ej58vtHcgOGEISrhm5zXcKE5MjUQw4Gfibxdp6lzRCiX782NvcaXiybw1LUachqdmwD9QtygPpoiWVymeT08g20GO6qdR7QS8elMaX2DOcm1e/eHjE2bdfoBiKK3Exn427RX6Pir7eJ8zrU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQdG8+P2NSordCyhv31+i25TANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAQgBBAFMARgBBAEQAXABDAFUATgBIAEEAQwBBMB4XDTIwMTIxNTE3NTAxMloXDTIxMTIxNTIzNTAxMlowJzElMCMGA1UEAx4cAEIAQQBTAEYAQQBEAFwAQwBVAE4ASABBAEMAQTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzmQPwjIm+3Gp9ACa1sHeMyEXBDN6ej58vtHcgOGEISrhm5zXcKE5MjUQw4Gfibxdp6lzRCiX782NvcaXiybw1LUachqdmwD9QtygPpoiWVymeT08g20GO6qdR7QS8elMaX2DOcm1e/eHjE2bdfoBiKK3Exn427RX6Pir7eJ8zrUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAUuSB5aXv0AO3BmysQhnSfyhSIGEv4SwNl/FFoGxCoauvoWWTa8zDLrc2yIsjGW5HBUrKwEsLSQVyjTbLykXfkCTacTns61nw5TPWdtcsCTljGUvNsuG5fS4UjsNAVTtFgEx/vKBKQavEan2Ru7hVZWxEKf7rL2dwKB/hub4QIeg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
